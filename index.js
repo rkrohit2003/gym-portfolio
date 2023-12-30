@@ -1,9 +1,5 @@
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-// Update the import paths accordingly
-import AOS from "./path/to/aos";
-import "./path/to/aos/dist/aos.css";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 AOS.init({
   disable: false,
