@@ -1,8 +1,9 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
+// Update the import paths accordingly
+import AOS from "./path/to/aos";
+import "./path/to/aos/dist/aos.css";
 
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
 
 AOS.init({
   disable: false,
@@ -21,17 +22,3 @@ AOS.init({
   mirror: false,
   anchorPlacement: 'top-bottom',
 });
-
-var mymap = L.map('mapid').setView([51.404, -0.09], 13);
-
-L.tileLayer(
-  'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
-  {
-    maxZoom: 15,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken:
-      'pk.eyJ1IjoibWFudTEyMzQ1Njc4OSIsImEiOiJja29tajdwMzQwZHRiMzFsNjRiNW9zdG1qIn0.3epHzR4kLOhVoS3ejiItbg',
-  }
-).addTo(mymap);
