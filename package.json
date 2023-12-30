@@ -1,7 +1,7 @@
 {
-  "name": "MFitness",
+  "name": "GYM Portfolio",
   "version": "1.0.0",
-  "description": "MFitness reponsive webite build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations.",
+  "description": "GYM Portfolio reponsive webite build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations.",
   "main": "index.html",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -10,18 +10,18 @@
     "build": "npm run prefix:css && npm run parcel",
     "dev": "parcel index.html"
   },
-  "author": "Manoranjan",
+  "author": "Rohit Kumar",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.2.5",
-    "node-sass": "^5.0.0",
-    "parcel": "^2.0.0-beta.2",
+    "autoprefixer": "^10.4.16",
+    "node-sass": "^9.0.0",
+    "parcel": "^2.10.3",
     "parcel-bundler": "^1.12.5",
-    "postcss": "^8.2.14",
-    "postcss-cli": "^8.3.1"
+    "postcss": "^8.4.32",
+    "postcss-cli": "^11.0.0"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
-    "leaflet": "^1.7.1"
+    "leaflet": "^1.9.4"
   }
 }
